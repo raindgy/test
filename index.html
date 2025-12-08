@@ -1,7 +1,17 @@
 <html>
-	<title>test html</title>
+<head>
+	<title>test html</title></head>
 	<body>
 		this is html test content
 		<a href="hi.html">hi</a>
+		<input id='ipt-txt' onkeyup="run()"/>
+		<textarea id="mgs-box"></textarea>
 	</body>
-</html>
+
+	</html>
+	<script>
+		function run(){
+			let txt=document.getElementById('ipt-txt').value
+			document.getElementById('mgs-box').innerText=txt
+		}
+	</script>
