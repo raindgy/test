@@ -1,15 +1,25 @@
 <html>
-	<title>test html</title>
+<head>
+	<title>test html</title></head>
 	<body>
 		this is html test content
 		<a href="hi.html">hi</a>
-		<input id="ipt-txt"></input>
+		
+		<input id="ipt1-txt"></input>
 		<button id="show" onclick="show()">show msg</button>
-		<textarea id="mgs-box"></textarea>
+		<textarea id="mgs-box1"></textarea>
 	</body>
 </html>
 <script>
 	function show(){
-		document.getElementById('mgs-box').innerText=document.getElementById('ipt-txt').value;
+		document.getElementById('mgs-box1').innerText=document.getElementById('ipt1-txt').value;
 	}
-</script>
+		
+<input id='ipt2-txt' onkeyup="run()"/>
+		<textarea id="mgs-box2"></textarea>
+
+		function run(){
+			let txt=document.getElementById('ipt2-txt').value
+			document.getElementById('mgs-box2').innerText=txt
+		}
+	</script>
