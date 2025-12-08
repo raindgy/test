@@ -3,5 +3,13 @@
 	<body>
 		this is html test content
 		<a href="hi.html">hi</a>
+		<input id="ipt-txt"></input>
+		<button id="show" onclick="show()">show msg</button>
+		<textarea id="mgs-box"></textarea>
 	</body>
 </html>
+<script>
+	function show(){
+		document.getElementById('mgs-box').innerText=document.getElementById('ipt-txt').value;
+	}
+</script>
